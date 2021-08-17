@@ -1,0 +1,10 @@
+body{
+    --twitter-color:#50b7f5;
+    --twitter-background:#e6ecf0;
+    
+}
+.dark-mode{
+    background-color: #1a1919;
+    color:white;
+    border:none;
+}
