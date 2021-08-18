@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import "./Widget.css"
 import {
     Timeline,
@@ -6,12 +6,22 @@ import {
     Tweet,
   } from "react-twitter-widgets";
   import SearchIcon from "@material-ui/icons/Search";
+import { useHistory } from 'react-router-dom';
 const Widget = () => {
+    const history = useHistory();
+    const [search,setSearch]=useState('');
+    const handleClick=()=>{
+        
+         history.push(`/search/${search}/`)   
+         setSearch("")
+    }
     return (
         <div className="widgets">
             <div className="widgets__input">
                 <SearchIcon className="widgets__searchIcon" />
-                <input placeholder="Search Twitter" type="text" />
+                <form onSubmit={handleClick}>
+                <input value={search} onChange={(e)=>setSearch(e.target.value)} placeholder="Search Twitter" type="text" />
+                </form>
             </div>
 
             <div className="widgets__widgetContainer">

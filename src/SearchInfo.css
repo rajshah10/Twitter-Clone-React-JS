@@ -1,0 +1,36 @@
+.searchInfo
+{
+    display: flex;
+    margin-top: 20px;
+    background-color: aliceblue;
+   
+}
+.news 
+{
+    padding: 5px;
+}
+.news p
+{
+    font-size: 12px;
+    margin-top: 5px;  
+}
+.news h1
+{
+    font-size: 15px;
+    float: left;
+    margin-top: 3px;
+    
+}
+.news-img img
+{
+    height:auto;
+    width: 140px;
+    padding: 6px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-top: 5px;
+}
+.news-img
+{
+    
+}

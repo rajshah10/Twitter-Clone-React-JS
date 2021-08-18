@@ -1,0 +1,14 @@
+.search
+{
+    flex:0.5;
+    border-bottom: 1px solid var(--twitter-background);
+    margin-top: -15px;
+    display: flex;
+
+}
+.widget
+{
+    margin-top: 20px;
+  
+    
+}

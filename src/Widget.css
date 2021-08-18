@@ -13,7 +13,7 @@
     outline: none;
   }
   
-  .widgets__input > input {
+  .widgets__input > form> input {
     border: none;
     background-color: var(--twitter-background);
     outline: none;
